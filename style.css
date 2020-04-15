@@ -134,3 +134,17 @@ body {
 h3 {
   color: #25133d;
 }
+
+.paticka {
+  background-color:  #25133d;
+  color: white;
+  text-align: center;
+  font-size: smaller;
+  /* padding: 2px; */
+  margin: 10px;
+}
+
+.img-letadlo {
+  display: inline-flex;
+  justify-content: center;
+}
