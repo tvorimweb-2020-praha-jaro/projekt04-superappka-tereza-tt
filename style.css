@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -13,21 +19,118 @@ html { box-sizing: border-box; }
  https://fonts.google.com/specimen/Roboto
 */
 
+h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.podnadpis {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+  margin: 0 auto; /* pruh je na stránce vycentrovaný */
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.body {
+  font: Source Sans Pro, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+.radek {
+  display: block;
+}
+
+.horni-lista {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  /* width: calc(100% / 4); */
+}
+
+.horni-lista-prvek {
+  width: 160px;
+  /* flex: 1; */
+}
+
+.horni-lista-prvek:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.banner {
+  /* height: 300px; */
+  background-image: url("images/pozadi.jpg");
+}
+
+.banner-pravy-sloupec {
+  float: right;
+}
+
+.button-first {
+  display: inline;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0.5em;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+}
+
+.button-first a:hover {
+  color: white;
+  background-color: #25133d;
+  text-decoration: none;
+}
+
+.button-second {
+  display: inline;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0.5em;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+}
+.banner-levy-sloupec {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 400px;
+  /* background-color: red; */
+  /* align-items: flex-end; */
+}
+
+.doplnujici-info {
+  display: inline-flex;
+  justify-content: center;
+}
+
+h3 {
+  color: #25133d;
+}
